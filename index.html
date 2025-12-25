@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Student Grade Calculator</h1>
+        <p>Simple tool para sa mga estudyante!</p>
+        
+        <div class="calculator">
+            <div class="input-group">
+                <label for="quiz">Quiz Score (30%):</label>
+                <input type="number" id="quiz" placeholder="Enter 0-100" min="0" max="100">
+            </div>
+            
+            <div class="input-group">
+                <label for="exam">Exam Score (50%):</label>
+                <input type="number" id="exam" placeholder="Enter 0-100" min="0" max="100">
+            </div>
+            
+            <div class="input-group">
+                <label for="project">Project Score (20%):</label>
+                <input type="number" id="project" placeholder="Enter 0-100" min="0" max="100">
+            </div>
+            
+            <button onclick="calculateGrade()">Calculate Final Grade</button>
+            
+            <div class="result" id="result">
+                <!-- Dito lalabas yung result -->
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h3>📝 How it Works:</h3>
+            <p>Quiz: 30% of final grade</p>
+            <p>Exam: 50% of final grade</p>
+            <p>Project: 20% of final grade</p>
+            <p><strong>Formula:</strong> (Quiz×0.3) + (Exam×0.5) + (Project×0.2)</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
